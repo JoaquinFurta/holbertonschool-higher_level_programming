@@ -6,3 +6,5 @@ def print_matrix_integer(matrix=[[]]):
                 print("{:d}".format(i[x]), end=" ")
             else:
                 print("{:d}".format(i[x]))
+    if matrix == [[]]:
+        print()
