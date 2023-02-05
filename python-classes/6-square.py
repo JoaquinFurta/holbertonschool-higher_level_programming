@@ -8,8 +8,8 @@ class Square:
     args: size of the square
     """
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -33,6 +33,7 @@ class Square:
            not all(isinstance(elem, int) for elem in value) or\
            not all(elem >= 0 for elem in value):
             raise TypeError("position must be a tuple of 2 positive integers")
+        self.__position = value
 
     def area(self):
         return (self.__size * self.__size)
