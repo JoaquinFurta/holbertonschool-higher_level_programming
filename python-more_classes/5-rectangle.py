@@ -52,5 +52,6 @@ class Rectangle:
     def __repr__(self):
         rp = "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
         return rp
+
     def __del__(self):
         print("Bye rectangle...")
