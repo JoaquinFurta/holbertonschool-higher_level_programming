@@ -3,6 +3,17 @@
 >>> matrix_divided(matrix, 3)
 [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
+>>> print(matrix_divided([[]], 3))
+[[]]
+>>> print(matrix_divided([], 3))
+[]
+>>> print(matrix_divided(matrix, None))
+Traceback (most recent call last):
+  File "./main.py", line 10, in <module>
+    print(matrix_divided([[]], None))
+  File "/root/2-trimester/holbertonschool-higher_level_programming/python-test_driven_development/2-matrix_divided.py", line 14, in matrix_divided
+    raise TypeError("div must be a number")
+TypeError: div must be a number
 
 >>> matrix = [[1, 2, 3],[4, 5, "Z"]]
 >>> matrix_divided(matrix, 3)
