@@ -19,7 +19,7 @@ def matrix_divided(matrix, div):
 
     if not all(all(isinstance(elem, (int, float)) for elem in row)
                for row in matrix):
-        raise TypeError("matrix must be a matrix (list of lists) "
-                        + "of integers/floats")
+        raise TypeError("matrix must be a matrix (list of lists)" + 
+                        " of integers/floats")
 
     return [[round(elem / div, 2) for elem in row] for row in matrix]
