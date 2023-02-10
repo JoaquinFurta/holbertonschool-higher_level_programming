@@ -1,1 +1,1 @@
-Readme for everything is a priject for holberton school
+Readme for everything is an object project for holberton school
