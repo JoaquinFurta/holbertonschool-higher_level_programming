@@ -16,7 +16,7 @@ Darkness.
 my old friend
 
 >>> text_indentation("")
->>>
+
 
 >>> text_indentation(12)
 Traceback (most recent call last):
