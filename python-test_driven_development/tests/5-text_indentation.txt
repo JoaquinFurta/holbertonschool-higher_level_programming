@@ -18,11 +18,9 @@ my old friend
 >>> text_indentation("")
 >>>
 
->>> text_indentation([1, 2, 3])
+>>> text_indentation(12)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-  File "5-text_indentation.py", line 11, in text_indentation
-    print("".join([elem if elem not in ".?:" else elem + "\n\n"
-  File "5-text_indentation.py", line 11, in <listcomp>
-    print("".join([elem if elem not in ".?:" else elem + "\n\n"
-TypeError: 'in <string>' requires string as left operand, not int
+  File "5-text_indentation.py", line 10, in text_indentation
+    raise TypeError("text must be a string")
+TypeError: text must be a string

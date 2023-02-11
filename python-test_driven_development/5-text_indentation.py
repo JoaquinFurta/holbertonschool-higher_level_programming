@@ -7,6 +7,7 @@ def text_indentation(text):
     """ add newlines to a text when it contains (., ?, :)"""
 
     if not isinstance(text, str):
-        TypeError("text must be a string")
+        raise TypeError("text must be a string")
     print("".join([elem if elem not in ".?:" else elem + "\n\n"
-                   for elem in text]).replace("\n ", "\n"), end="")
+                   for elem in text])
+            .replace("\n ", "\n").replace("\n  ", "\n"), end="")
