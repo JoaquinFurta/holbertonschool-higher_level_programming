@@ -28,8 +28,10 @@
 >>> mylist.print_sorted()
 [-2, 1, 3]
 
->>> mylist = MyList([2, 1]).print_sorted()
-[1, 2]
+>>> otherlist = mylist.print_sorted()
+[-2, 1, 3]
 
->>> print(mylist)
+>>> print(otherlist)
 None
+
+
