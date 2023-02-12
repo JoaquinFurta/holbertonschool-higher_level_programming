@@ -10,9 +10,11 @@ def pascal_triangle(n):
 
     if n <= 0:
         return tri_l
-    else:
+    elif n == 1:
         tri_l.append([1])
-        tri_l.append([1, 1])
+        return tri_l
+    else:
+        tri_l = [[1], [1, 1]]
 
     for idx in range(1, n - 1):
         auxL = [1]
