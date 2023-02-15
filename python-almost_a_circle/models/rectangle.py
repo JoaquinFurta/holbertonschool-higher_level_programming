@@ -1,10 +1,13 @@
 #!/usr/bin/python3
+""" rectangle class """
+
 
 from models.base import Base
 
 
 class Rectangle(Base):
-    def __init__(self, width, height, x=0, y=0, id =None):
+    """Rectangle class that inherince from Base"""
+    def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
         self.width = width
         self.height = height
@@ -52,7 +55,7 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def y(self,value):
+    def y(self, value):
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         if value < 0:
