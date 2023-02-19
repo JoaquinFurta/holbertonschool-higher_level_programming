@@ -80,8 +80,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """prints attributes of the rectangle"""
-        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} -\
-                 {self.__width}/{self.__height}"
+        return "{} ({}) {}/{} - {}/{}".format(
+                "[Rectangle]", self.id, self.__x, self.__y,
+                self.__width, self.__height)
 
     def update(self, *args, **kwargs):
         """updates the rectangle"""
