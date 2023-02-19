@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ A subclass from Rectangle called Square """
 
 
