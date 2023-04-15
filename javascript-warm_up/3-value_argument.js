@@ -3,7 +3,11 @@
 
 const process = require('process');
 
-const argLen = process.argv.length;
+let argLen = 0;
+
+process.argv.forEach(function (elem) {
+  argLen++;
+});
 
 if (argLen === 2) {
   console.log('No argument');
