@@ -9,5 +9,8 @@ function factorial (n) {
     return n * factorial(n - 1);
   }
 }
-
-console.log(factorial(parseInt(process.argv[2])));
+if (process.argv[2]) {
+  console.log(factorial(parseInt(process.argv[2])));
+} else {
+  console.log('1');
+}
