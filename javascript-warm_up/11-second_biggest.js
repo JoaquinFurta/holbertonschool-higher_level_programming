@@ -2,7 +2,7 @@
 /* script that returns the second biggest integer in the list of arguments */
 const process = require('process');
 
-if (!process.argv[4]) {
+if (!process.argv[3]) {
   console.log('0');
 } else {
   process.argv.splice(0, 2);
