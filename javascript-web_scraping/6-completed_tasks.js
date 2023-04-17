@@ -19,6 +19,6 @@ request.get(process.argv[2], (err, response, body) => {
       i++;
     }
   } catch (e) {
-    console.log(res);
   }
+  console.log(res);
 });
