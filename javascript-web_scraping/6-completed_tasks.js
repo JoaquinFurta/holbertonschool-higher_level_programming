@@ -7,8 +7,8 @@ request.get(process.argv[2], (err, response, body) => {
   if (err) throw err;
   let count = 0;
   const res = {};
-  const obj = JSON.parse(body);
   try {
+    const obj = JSON.parse(body);
     let i = 0;
     while (1) {
       obj.forEach((elem) => {
@@ -19,6 +19,9 @@ request.get(process.argv[2], (err, response, body) => {
       i++;
     }
   } catch (e) {
+    console.log(res);
+    count = -1;
   }
-  console.log(res);
+  if (count !== -1)
+    console.log({});
 });
